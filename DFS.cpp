@@ -7,6 +7,7 @@ private:
     int nc = grid[0].size();
 
     grid[r][c] = '0';
+      //Recursive call to dfs search at each new '1' found and then they are set to 0 so they don't trigger dfs again
     if (r - 1 >= 0 && grid[r-1][c] == '1') dfs(grid, r - 1, c);
     if (r + 1 < nr && grid[r+1][c] == '1') dfs(grid, r + 1, c);
     if (c - 1 >= 0 && grid[r][c-1] == '1') dfs(grid, r, c - 1);
