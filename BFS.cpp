@@ -5,7 +5,7 @@ public:
     //assign the number of rows to nr 
     int nr = grid.size();
     
-    //This means if (!nr != 0) which we learned in descreet math means if (nr != 0)
+    //This means if(nr == 0)
     if (!nr) return 0;
     
     //assign the number of coulems to nc
